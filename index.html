@@ -13,8 +13,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#1d2433; --navy:#1f2a44; --gold:#c08a3e; --gold-soft:#f3e6d1;
-    --cream:#faf7f2; --stone:#e9e3d8; --muted:#5d6475; --white:#fff; --sage:#e4ebe3;
+    /* Brand palette: Soft Linen, Navy, Muted Coral, Forest Green, Classic Gold, Emerald #0B5844 */
+    --linen:#EEE6DB; --navy:#183248; --coral:#D98474; --forest:#28473C; --gold:#C6A66A; --emerald:#0B5844;
+    --ink:#132536; --gold-soft:#F4ECDD; --coral-soft:#F6DED7;
+    --cream:#F5F0E8; --stone:#E2D8C9; --muted:#56606c; --white:#fff; --sage:#E3EBE6;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -37,7 +39,8 @@
   .hero{padding:104px 0 96px;position:relative;overflow:hidden}
   .hero:after{content:"";position:absolute;right:-160px;top:-120px;width:520px;height:520px;border-radius:50%;background:var(--gold-soft);z-index:-1}
   .hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center}
-  .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:600;color:var(--gold);margin-bottom:18px}
+  .eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:600;color:var(--emerald);margin-bottom:18px}
+  .cowork .eyebrow{color:var(--gold)}
   .hero h1{font-size:clamp(2.6rem,6vw,4.2rem);margin-bottom:26px}
   .hero p{font-size:1.18rem;color:var(--muted);max-width:640px;margin-bottom:36px}
   .hero .actions{display:flex;gap:14px;flex-wrap:wrap}
@@ -52,7 +55,7 @@
   .section-head p{color:var(--muted);font-size:1.08rem}
   .about{background:var(--white)}
   .about-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
-  .quote{font-family:Fraunces,serif;font-size:1.8rem;line-height:1.35;color:var(--navy);border-left:4px solid var(--gold);padding-left:24px;position:sticky;top:110px}
+  .quote{font-family:Fraunces,serif;font-size:1.8rem;line-height:1.35;color:var(--navy);border-left:4px solid var(--coral);padding-left:24px;position:sticky;top:110px}
   .about-body p{margin-bottom:18px}
   .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:30px 0}
   .stat{background:var(--cream);border-radius:14px;padding:22px;text-align:center}
