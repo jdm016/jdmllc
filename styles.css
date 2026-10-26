@@ -245,11 +245,11 @@ section>.wrap{position:relative;z-index:1}
 .promise-lead{text-align:center;font-size:clamp(2.6rem,6vw,4.4rem);margin-bottom:22px}
 .promise-lead .script{font-size:1.15em;white-space:nowrap}
 .promise{font-family:Inter,system-ui,sans-serif;font-size:clamp(1.1rem,2vw,1.3rem);line-height:1.7;color:var(--muted);max-width:720px}
-.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:900px;margin:44px auto 10px}
-.pillar{text-align:center;background:var(--cream);border-radius:999px 999px 24px 24px;padding:34px 22px 28px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:900px;margin:44px auto 10px;justify-items:center}
+.pillar{text-align:center;background:var(--cream);border-radius:50%;aspect-ratio:1/1;width:100%;max-width:270px;margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:34px;box-shadow:0 14px 36px rgba(24,50,72,.07)}
 .pillar h3{font-size:1.4rem;margin-bottom:8px}
 .pillar:nth-child(1) h3{color:var(--coral)}
 .pillar:nth-child(2) h3{color:var(--emerald)}
 .pillar:nth-child(3) h3{color:#a7843f}
 .pillar p{color:var(--muted);font-size:.97rem}
-@media (max-width:760px){.pillars{grid-template-columns:1fr}}
+@media (max-width:760px){.pillars{grid-template-columns:1fr}.pillar{max-width:250px}}
