@@ -253,3 +253,6 @@ section>.wrap{position:relative;z-index:1}
 .pillar:nth-child(3) h3{color:#a7843f}
 .pillar p{color:var(--muted);font-size:.97rem}
 @media (max-width:760px){.pillars{grid-template-columns:1fr}.pillar{max-width:250px}}
+
+/* Keep script phrases together on one line */
+h1 .script,h2 .script{white-space:nowrap;display:inline-block}
