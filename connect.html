@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stay Connected | Jessica D. Maine</title>
+<meta name="description" content="Join The Human-First Operator newsletter, download the free checklist, or join The Open Table monthly roundtable.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Sacramento&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo">Jessica D. Maine<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open menu" onclick="document.querySelector('.links').classList.toggle('open')">&#9776;</button>
+      <div class="links">
+        <a href="about.html">About</a>
+        <a href="work-with-me.html">Work With Me</a>
+        <a href="coworking.html">Coworking</a>
+        <a href="projects.html">Projects</a>
+        <a href="speaking.html">Speaking</a>
+        <a href="connect.html" class="btn">Let's Connect</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Let's Connect</p>
+      <h1>Stay <span class="script" style="font-size:1.2em">close.</span></h1>
+      <p>Not ready to work together? Stay close. These are the ways I share what I'm learning and bring good people together.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:20px">
+    <div class="wrap grid-3">
+      <div class="connect-block">
+        <p class="eyebrow">Newsletter</p>
+        <h3>The Human-First Operator</h3>
+        <p>Practical ideas on operations, leadership, and building teams people want to be on, delivered to your inbox. Expect useful tools and honest lessons from the work.</p>
+        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="newsletter">
+        <p class="hidden"><label>Leave this blank <input name="bot-field"></label></p>
+          <input name="first-name" placeholder="First name" aria-label="First name">
+          <input type="email" name="email" placeholder="Email" required aria-label="Email">
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+      <div class="connect-block">
+        <p class="eyebrow">Free Guide</p>
+        <h3>The Human-First Operations Checklist</h3>
+        <p>A free, downloadable guide to help you check the health of your operations, from systems and workflows to team cadence and culture. Use it on your own, or bring it to our first conversation.</p>
+        <form name="guide-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="guide-request">
+        <p class="hidden"><label>Leave this blank <input name="bot-field"></label></p>
+          <input name="first-name" placeholder="First name" aria-label="First name">
+          <input type="email" name="email" placeholder="Email" required aria-label="Email">
+          <button type="submit" class="btn coral">Send Me the Checklist</button>
+        </form>
+      </div>
+      <div class="connect-block">
+        <p class="eyebrow">Monthly Roundtable</p>
+        <h3>The Open Table</h3>
+        <p>A free monthly virtual roundtable for founders, operators, and nonprofit leaders. Bring a challenge, share what's working, and learn from peers who understand the work.</p>
+        <form name="roundtable" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="roundtable">
+        <p class="hidden"><label>Leave this blank <input name="bot-field"></label></p>
+          <input name="name" placeholder="Name" required aria-label="Name">
+          <input type="email" name="email" placeholder="Email" required aria-label="Email">
+          <button type="submit" class="btn">Save My Seat</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap news-strip">
+      <div>
+        <p class="eyebrow">For Coworking Operators</p>
+        <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem);margin-bottom:12px">The Community Operators Circle</h2>
+        <p>A peer circle for coworking owners and operators. Swap ideas on member experience, events, partnerships, and the daily realities of running a space.</p>
+      </div>
+      <div class="actions"><a href="coworking.html" class="btn gold">Request an Invitation</a><a href="speaking.html" class="btn gold" style="background:transparent;color:var(--gold)!important;border:1.5px solid var(--gold)">Book Me to Speak</a></div>
+    </div>
+  </section>
+
+  <section class="coral-bg" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <p class="eyebrow">Work Together</p>
+        <h2 style="font-size:clamp(2rem,4vw,2.8rem);margin-bottom:16px">Let's talk about what you're building.</h2>
+        <p style="color:var(--muted);margin-bottom:20px">Book a discovery conversation and tell me about your team, your space, or your organization, and what you want to be true a year from now. You can also email me directly at <a href="mailto:hello@jessicadmaine.com">hello@jessicadmaine.com</a>.</p>
+        <p><a href="https://www.linkedin.com/in/jessicadmaine" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+      </div>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="panel">
+        <input type="hidden" name="form-name" value="contact">
+        <p class="hidden"><label>Leave this blank <input name="bot-field"></label></p>
+        <label for="name">Name</label><input id="name" name="name" required>
+        <label for="email">Email</label><input id="email" type="email" name="email" required>
+        <label for="org">Organization</label><input id="org" name="organization">
+        <label for="interest">I'm interested in</label>
+        <select id="interest" name="interest">
+          <option value="1">Discovery Conversation (free)</option>
+          <option value="2">Operations Clarity Audit</option>
+          <option value="3">VIP Strategy Intensive</option>
+          <option value="4">AI Implementation Sprint</option>
+          <option value="5">Coworking Community and Operations Blueprint</option>
+          <option value="6">Fractional COO Partnership</option>
+          <option value="7">Something else</option>
+        </select>
+        <label for="message">What are you working on?</label><textarea id="message" name="message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <script>
+    const p=new URLSearchParams(location.search).get('interest');
+    if(p){const s=document.getElementById('interest'); if(s) s.value=p;}
+  </script>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Let's talk about what you're building.</h2>
+          <p>Book a free discovery conversation, or email hello@jessicadmaine.com.</p>
+        </div>
+        <a href="connect.html#contact" class="btn coral">Book a Discovery Conversation</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo">Jessica D. Maine</a>
+        <p style="margin-top:12px">Jessica D. Maine LLC: human-first operations, built to last.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="work-with-me.html">Work With Me</a></li><li><a href="coworking.html">Coworking</a></li><li><a href="projects.html">Projects</a></li><li><a href="speaking.html">Speaking</a></li></ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul><li><a href="connect.html">Newsletter and Roundtable</a></li><li><a href="mailto:hello@jessicadmaine.com">hello@jessicadmaine.com</a></li><li><a href="https://www.linkedin.com/in/jessicadmaine" target="_blank" rel="noopener">LinkedIn</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom"><span>&copy; 2026 Jessica D. Maine LLC &middot; Dallas-Fort Worth, Texas</span><span>Serving clients in DFW and nationwide</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
